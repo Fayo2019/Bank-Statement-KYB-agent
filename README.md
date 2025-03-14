@@ -37,10 +37,10 @@ This python code automates the verification of business bank statements, extract
    - Windows: [Download binaries](https://github.com/oschwartz10612/poppler-windows/releases/)
 
 4. Create a .env file in the root directory of the format: 
-'''
+```env
 OPENAI_API_KEY=<your-openai-key>
 OPENAI_MODEL=<openai-omni-model(I use gpt4o)>
-'''
+```
 
 
 ## Usage
