@@ -49,7 +49,7 @@ Run the tool on any PDF document from the terminal:
 1. cd to the root directory
 2. Use the command 'python src/main.py path/to/bank_statement.pdf'
    - -v adds verbose
-   - -o path-to-reports saves the report to a specific directory (defaults to the directory of the document being analysed)
+   - -o path-to-reports-directory saves the report to a specific directory (defaults to the directory of the document being analysed)
 
 
 ## Extending the Tool
