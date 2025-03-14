@@ -58,9 +58,6 @@ def analyze_bank_statement(pdf_path: str, model: str = os.getenv("OPENAI_MODEL",
             "confidence": document_type.get("confidence", 0),
             "evidence": document_type.get("evidence", []),
             "metadata": metadata
-        },
-        "business_details": {
-            "bank_name": document_type.get("bank_name", "Unknown")
         }
     }
     
@@ -99,10 +96,6 @@ def analyze_bank_statement(pdf_path: str, model: str = os.getenv("OPENAI_MODEL",
                              structure_analysis, 
                              financial_data, 
                              verbose=verbose)
-    
-    # If bank_name from document_type isn't already in business_details, add it
-    if "bank_name" not in business_details and document_type.get("bank_name"):
-        business_details["bank_name"] = document_type.get("bank_name")
     
     # Remove internal transaction data before adding to output
     if "_transactions_for_analysis" in financial_data:

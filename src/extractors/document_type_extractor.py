@@ -17,6 +17,5 @@ def analyze_document_type(images: List, model: str = os.getenv("OPENAI_MODEL", "
     - "confidence": number between 0-1
     - "document_type": the identified document type
     - "evidence": detailed reasoning explaining why you classified the document as this type, providing specific examples from the document
-    - "bank_name": name of the bank if identifiable
     """
     return get_completion(prompt, images, model=model, json_mode=True) 
