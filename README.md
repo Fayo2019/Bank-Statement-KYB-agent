@@ -59,12 +59,13 @@ Run the tool on any PDF document from the terminal:
 ## Extending the Tool
 
 This MVP can be extended in several ways:
-- Identifying and mitigating current causes of mis-verification with more diverse, labelled examples
-- Optimise prompts and scoring values to better represent indicators of higher/lower risk
+- Identifying and mitigating current causes of mis-verification with more diverse, labelled document examples
+- Optimise prompts and tune component's values to better represent indicators of higher/lower risk
 - Train specialized models for specific banks
-- Optimising output depending on how the service ought to be used
+- Optimising output depending on how the service ought to be used (as of now it's an executive summary style json)
+- Depending on time to invoke/cost restraints, there's a possibility to create a mixture of experts approach with a gating model providing the final risk conclusion and resuse mis-verification
 - Appify and containerise the functionality to be invoked as an endpoint
-- split main.py into multiple files for ease of finding the code for functionalities in building later versions.
+- Split main.py into multiple files for ease of finding the code for functionalities in building later versions.
 
 
 ## Limitations
