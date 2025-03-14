@@ -59,7 +59,7 @@ This MVP can be extended in several ways:
 - Optimise prompts and tune component's values to better represent indicators of higher/lower risk
 - Train specialized models for specific banks
 - Optimising output depending on how the service ought to be used (as of now it's an executive summary style json)
-- Depending on time to invoke/cost restraints, there's a possibility to create a mixture of experts approach with a gating model providing the final risk conclusion and resuse mis-verification
+- Depending on time to invoke/cost restraints, there's a possibility to create a mixture of experts approach with a gating model providing the final risk conclusion and reduce the mis-verification rate/severity
 - Appify and containerise the functionality to be invoked as an endpoint
 
 ## Limitations
