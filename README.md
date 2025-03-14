@@ -65,8 +65,6 @@ This MVP can be extended in several ways:
 - Optimising output depending on how the service ought to be used (as of now it's an executive summary style json)
 - Depending on time to invoke/cost restraints, there's a possibility to create a mixture of experts approach with a gating model providing the final risk conclusion and resuse mis-verification
 - Appify and containerise the functionality to be invoked as an endpoint
-- Split main.py into multiple files for ease of finding the code for functionalities in building later versions.
-
 
 ## Limitations
 
